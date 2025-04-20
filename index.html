@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CampusConnect - Where Past Meets Present, And Futures Begin - Alumni Connect Portal</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CampusConnect is a modern alumni portal designed to strengthen connections between past and present students through verified profiles, networking tools, and community features. The platform supports multiple colleges, enabling students to explore wider opportunities, connect beyond their own campus, and build a stronger professional network." />
+        <meta name="keywords" content="CampusConnect, Linkedin, Alumni, campus, colleges, network, students" />
+        <meta name="author" content="Saurabh Jha" />
+        <meta name="copyright" content="Saurabh Jha" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlebot" content="index, follow">
+        <meta property="og:description" content="CampusConnect is a modern alumni portal designed to strengthen connections between past and present students through verified profiles, networking tools, and community features. The platform supports multiple colleges, enabling students to explore wider opportunities, connect beyond their own campus, and build a stronger professional network." />
+        <meta property="og:title" content="CampusConnect - Where Past Meets Present, And Futures Begin - Alumni Connect Portal" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="CampusConnect" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:image" content="./assets/images/CampusConnect - Logo FullText.jpg" />
+        <meta name="twitter:title" content="CampusConnect - Where Past Meets Present, And Futures Begin - Alumni Connect Portal"/>
+        <meta name="twitter:description" content="CampusConnect is a modern alumni portal designed to strengthen connections between past and present students through verified profiles, networking tools, and community features. The platform supports multiple colleges, enabling students to explore wider opportunities, connect beyond their own campus, and build a stronger professional network."/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@Saurabh_Jha_006"/>
+        <meta name="twitter:image" content="./assets/images/CampusConnect - Logo FullText.jpg"/>
+        <meta name="twitter:creator" content="@Saurabh_Jha_006"/><!--Are you looking for me??-->
+        <link rel="icon" type="image/png" href="./assets/images/CampusConnect - Favicon.jpg">
+        <link rel="shortcut icon" href="./assets/images/CampusConnect - Favicon.jpg">
+        <link rel="apple-touch-icon image_src" href="./assets/images/CampusConnect - Favicon.jpg">
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+<body>
+
+    <div id="preloader">
+        <div class="preloader-content">
+          <img src="./assets/images/preloader.gif" alt="CampusConnect Logo" class="logo" />
+          <div class="loader-bar">
+            <div class="loader-progress"></div>
+          </div>
+        </div>
+    </div>   
+
+    <nav class="navbar">
+      <div class="logo-container">
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: #000;">CampusConnect</a></div>
+      </div>
+        
+        <div class="search-container">
+            <div class="search-input-container" id="search-box">
+              <input type="text" class="search-input" placeholder="Global Search" aria-label="Search" readonly>
+              <div class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="desktop-links">
+            <div class="nav-links">
+              <a href="index.html" class="nav-link">Home</a>
+            <a href="Profile.html" class="nav-link">Profiles</a>
+              <a href="chat.html" class="nav-link">Chat</a>
+              <a href="community.html" class="nav-link">Community</a>
+              <a href="about.html" class="nav-link">About</a>
+              <div class="login-btn" id="desktop-login-button">
+                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile-icons">
+            <div class="mobile-search-icon" id="mobile-search">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </div>
+            
+            <div class="login-btn" id="mobile-login-button">
+              <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+       
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        
+        <div class="nav-menu">
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Profile.html" class="nav-link">Profiles</a>
+            <a href="chat.html" class="nav-link">Chat</a>
+            <a href="community.html" class="nav-link">Community</a>
+            <a href="about.html" class="nav-link">About</a>
+          </div>
+        </div>
+      </nav>
+
+  <section class="hero-section">
+    <h1 class="hero-title">Welcome to CampusConnect</h1>
+    <p class="hero-tagline">Where Past Meets Present, And Futures Begin</p>
+    <div class="hero-buttons">
+      <a href="chat.html"><button class="hero-button btn-chat">Chat</button></a>
+      <a href="community.html"><button class="hero-button btn-community">Community</button></a>
+      <a href="dashboard.html"><button class="hero-button btn-dashboard">Dashboard</button></a>
+    </div>
+  </section>
+       <!-- Section 1: Features - Chat -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-heading fade-in">Features</h2>
+      <div class="feature-row">
+        <div class="feature-content fade-in">
+          <h3 class="feature-title">Chat System</h3>
+          <p class="feature-text">The CampusConnect chat system enables real-time, one-on-one conversations between students and alumni. Built using Supabase’s real-time database and authentication features, it allows users to send and receive messages instantly in a secure and private environment. Whether it’s for career guidance, mentorship, or friendly catch-ups, the chat interface is designed to be fast, responsive, and easy to use—bringing conversations to life within your campus network.</p>
+        </div>
+        <div class="feature-image fade-in">
+          <img src="./assets/images/chat.png" alt="Chat Feature">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 2: Community -->
+  <section class="section" style="background-color: #f1f5f9;">
+    <div class="container">
+      <div class="feature-row reverse-mobile">
+        <div class="feature-image fade-in">
+          <img src="./assets/images/community.png" alt="Community Feature">
+        </div>
+        <div class="feature-content fade-in">
+          <h3 class="feature-title">Community</h3>
+          <p class="feature-text">The community feed allows users to share updates, post announcements, celebrate achievements, and engage in open discussion. It functions as a social timeline where both students and alumni can contribute to the ongoing story of their campus. Powered by Supabase’s real-time data handling, the feed ensures that new posts appear instantly, keeping the community connected, active, and informed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 3: Dashboard -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-row">
+        <div class="feature-content fade-in">
+          <h3 class="feature-title">Dashboard</h3>
+          <p class="feature-text">The CampusConnect dashboard is the central hub for every user. Once logged in, users are greeted with a personalized view that displays key information such as their profile, recent activity, and quick links to explore the community feed, alumni directory, and active chats. Designed for clarity and ease of access, the dashboard acts as the starting point for users to navigate their digital campus experience efficiently.</p>
+        </div>
+        <div class="feature-image fade-in">
+          <img src="./assets/images/dashboard.png" alt="Dashboard Feature">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 4: Global Search -->
+  <section class="section" style="background-color: #f1f5f9;">
+    <div class="container">
+      <div class="feature-row reverse-mobile">
+        <div class="feature-image fade-in">
+          <img src="./assets/images/search.png" alt="Global Search Feature">
+        </div>
+        <div class="feature-content fade-in">
+          <h3 class="feature-title">Global Search</h3>
+          <p class="feature-text">The alumni directory is a powerful tool for discovering and connecting with verified alumni from various departments, batches, and locations. Users can filter alumni by profession, college, department, location, or batch and even search using keywords. Each alumni profile includes key information and a “Connect” button to initiate chat. This directory is the backbone of CampusConnect's networking feature—bridging the gap between alumni and students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section 5: Additional Features List -->
+  <section class="additional-features">
+    <div class="container">
+      <h2 class="section-heading fade-in">Additional Features</h2>
+      <div class="features-list">
+        <div class="feature-item fade-in">
+          <div class="feature-item-content">
+            <h4 class="feature-item-title">User Authentication</h4>
+          </div>
+        </div>
+        
+        <div class="feature-item fade-in">
+          <div class="feature-item-content">
+            <h4 class="feature-item-title">Chat System</h4>
+          </div>
+        </div>
+        
+        <div class="feature-item fade-in">
+          <div class="feature-item-content">
+            <h4 class="feature-item-title">Global Search</h4>
+          </div>
+        </div>
+        
+        <div class="feature-item fade-in">
+          <div class="feature-item-content">
+            <h4 class="feature-item-title">Search and Filter</h4>
+          </div>
+        </div>
+        
+        <div class="feature-item fade-in">
+          <div class="feature-item-content">
+            <h4 class="feature-item-title">Community Feed</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-title">Connect with CampusConnect</div>
+    
+    <div class="social-icons">
+      <a href="https://www.instagram.com/saurabh_jha_006/ " class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/saurabhjha19/" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href=" https://github.com/SaurabhJha19" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:saurabhjha1299@gmail.com" class="social-icon">
+        <i class="far fa-envelope"></i>
+      </a>
+    </div>
+    
+    <div class="footer-text">© Made by Saurabh Jha</div>
+    <div class="footer-subtext">WebDash - IEEE JMI</div>
+  </footer>
+        
+      
+    <!-- Javascript & External Links -->
+    <script src="assets/js/preloader.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

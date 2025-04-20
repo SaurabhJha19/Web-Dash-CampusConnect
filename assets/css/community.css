@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+  }
+  
+  .feed-container {
+    max-width: 700px;
+    margin: 40px auto;
+    margin-top: 10%;
+    padding: 0 20px;
+  }
+  
+  .like-section {
+    margin-top: 10px;
+  }
+  
+  .like-section button {
+    padding: 6px 12px;
+    font-size: 14px;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 30px;
+  }
+  
+  /* Create post */
+  .create-post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .create-post textarea {
+    padding: 10px;
+    font-size: 16px;
+    min-height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+  }
+  
+  .create-post button {
+    align-self: flex-end;
+    padding: 8px 16px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  /* Post list */
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .post-card {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  }
+  
+  .post-card h4 {
+    margin: 0;
+    color: #004080;
+  }
+  
+  .post-card p {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+  
+  @media (max-width: 1100px) {
+    .feed-container {
+        margin-top: 10%;
+
+    }
+  }
+
+  @media (max-width: 800px) {
+    .feed-container {
+        margin-top: 20%;
+
+    }
+  }
+
+  @media (max-width: 500px) {
+    .feed-container {
+        margin-top: 30%;
+
+    }
+  }

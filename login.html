@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login CampusConnect - Where Past Meets Present, And Futures Begin - Alumni Connect Portal</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CampusConnect is a modern alumni portal designed to strengthen connections between past and present students through verified profiles, networking tools, and community features. The platform supports multiple colleges, enabling students to explore wider opportunities, connect beyond their own campus, and build a stronger professional network." />
+    <meta name="keywords" content="CampusConnect, Linkedin, Alumni, campus, colleges, network, students" />
+    <meta name="author" content="Saurabh Jha" />
+    <meta name="copyright" content="Saurabh Jha" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:description" content="CampusConnect is a modern alumni portal designed to strengthen connections between past and present students through verified profiles, networking tools, and community features. The platform supports multiple colleges, enabling students to explore wider opportunities, connect beyond their own campus, and build a stronger professional network." />
+    <meta property="og:title" content="About CampusConnect - Where Past Meets Present, And Futures Begin - Alumni Connect Portal" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CampusConnect" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="./assets/images/CampusConnect - Logo FullText.jpg" />
+    <meta name="twitter:title" content="About CampusConnect - Where Past Meets Present, And Futures Begin - Alumni Connect Portal"/>
+    <meta name="twitter:description" content="CampusConnect is a modern alumni portal designed to strengthen connections between past and present students through verified profiles, networking tools, and community features. The platform supports multiple colleges, enabling students to explore wider opportunities, connect beyond their own campus, and build a stronger professional network."/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@Saurabh_Jha_006"/>
+    <meta name="twitter:image" content="./assets/images/CampusConnect - Logo FullText.jpg"/>
+    <meta name="twitter:creator" content="@Saurabh_Jha_006"/><!--Are you looking for me??-->
+    <link rel="icon" type="image/png" href="./assets/images/CampusConnect - Favicon.jpg">
+    <link rel="shortcut icon" href="./assets/images/CampusConnect - Favicon.jpg">
+    <link rel="apple-touch-icon image_src" href="./assets/images/CampusConnect - Favicon.jpg">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Roboto', sans-serif;
+      background-color: #4a86e8;
+    }
+    .auth-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 560px;
+      text-align: center;
+      border-radius: 25px;
+      
+    }
+    .auth-card h2 {
+      margin-bottom: 1rem;
+      color: #004080;
+    }
+    .auth-card input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      font-size: 14px;
+    }
+    .auth-card button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 12px;
+      border: none;
+      border-radius: 25px;
+      background-color: #004080;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .auth-card button:hover {
+      background-color: #002d5a;
+    }
+  </style>
+  <!-- Supabase JS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <div class="logo"><a href="index.html" style="text-decoration: none; color: #000;">CampusConnect</a></div>
+    </div>
+      
+      <div class="search-container">
+          <div class="search-input-container" id="search-box">
+            <input type="text" class="search-input" placeholder="Global Search" aria-label="Search" readonly>
+            <div class="search-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="desktop-links">
+          <div class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="Profile.html" class="nav-link">Profiles</a>
+
+            <a href="chat.html" class="nav-link">Chat</a>
+            <a href="community.html" class="nav-link">Community</a>
+            <a href="about.html" class="nav-link">About</a>
+            <div class="login-btn" id="desktop-login-button">
+              <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-icons">
+          <div class="mobile-search-icon" id="mobile-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </div>
+          
+          <div class="login-btn" id="mobile-login-button">
+            <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+     
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+      <div class="nav-menu">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="Profile.html" class="nav-link">Profiles</a>
+
+          <a href="chat.html" class="nav-link">Chat</a>
+          <a href="community.html" class="nav-link">Community</a>
+          <a href="about.html" class="nav-link">About</a>
+        </div>
+      </div>
+    </nav>
+  <div class="auth-card">
+    <h2>CampusConnect</h2>
+    <input type="email" id="email" placeholder="Email address" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Sign Up</button>
+  </div>
+  
+
+  <script>
+    // Initialize single Supabase client
+    const SUPABASE_URL   = 'https://pxgeekvsjpnlwdwazovp.supabase.co';
+    const SUPABASE_ANON  = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB4Z2Vla3ZzanBubHdkd2F6b3ZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUwNzg0OTUsImV4cCI6MjA2MDY1NDQ5NX0.ceDHVTlEVbesXXVBsFJOrp6VmWjxPav1PWUAijCmZks';
+    const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const loginBtn   = document.getElementById('loginBtn');
+      const signupBtn  = document.getElementById('signupBtn');
+      const emailInput = document.getElementById('email');
+      const pwInput    = document.getElementById('password');
+
+      // Check existing session
+      supabaseClient.auth.getSession().then(({ data: { session } }) => {
+        if (session) {
+          window.location.href = 'dashboard.html';
+        }
+      });
+
+      // Login
+      loginBtn.addEventListener('click', async () => {
+        const email = emailInput.value;
+        const password = pwInput.value;
+        const { error } = await supabaseClient.auth.signInWithPassword({ email, password });
+        if (error) {
+          alert('Login error: ' + error.message);
+        } else {
+          window.location.href = 'dashboard.html';
+        }
+      });
+
+      // Sign up
+      signupBtn.addEventListener('click', async () => {
+        const email = emailInput.value;
+        const password = pwInput.value;
+        const { error } = await supabaseClient.auth.signUp({ email, password });
+        if (error) {
+          alert('Signup error: ' + error.message);
+        } else {
+          alert('Signup successful! Please verify your email.');
+        }
+      });
+    });
+  </script>
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

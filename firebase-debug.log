@@ -1,0 +1,49 @@
+[debug] [2025-04-19T11:58:48.406Z] ----------------------------------------------------------------------
+[debug] [2025-04-19T11:58:48.409Z] Command:       D:\nodejs\node.exe C:\Users\de\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-04-19T11:58:48.410Z] CLI Version:   14.2.0
+[debug] [2025-04-19T11:58:48.410Z] Platform:      win32
+[debug] [2025-04-19T11:58:48.410Z] Node Version:  v20.14.0
+[debug] [2025-04-19T11:58:48.411Z] Time:          Sat Apr 19 2025 17:28:48 GMT+0530 (India Standard Time)
+[debug] [2025-04-19T11:58:48.411Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-04-19T11:58:48.414Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-04-19T11:58:48.465Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-04-19T11:58:48.466Z] > authorizing via signed-in user (saurabhsavarn2004@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\2025\Web dash\Project
+
+[debug] [2025-04-19T11:58:49.321Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-04-19T11:58:49.321Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-04-19T11:59:53.355Z] Checked if tokens are valid: false, expires at: 1740122629215
+[debug] [2025-04-19T11:59:53.355Z] Checked if tokens are valid: false, expires at: 1740122629215
+[debug] [2025-04-19T11:59:53.356Z] > refreshing access token with scopes: []
+[debug] [2025-04-19T11:59:53.358Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-04-19T11:59:53.358Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-19T11:59:54.053Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-04-19T11:59:54.053Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-04-19T11:59:54.073Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-04-19T11:59:54.073Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"public","name":"public"}
+[debug] [2025-04-19T11:59:56.065Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2025-04-19T11:59:56.065Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2025-04-19T11:59:56.741Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 409, Requested entity already exists
+    at responseToError (C:\Users\de\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\de\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID public. Please try again with a unique project ID.

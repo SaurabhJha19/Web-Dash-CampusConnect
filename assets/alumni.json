@@ -1,0 +1,36 @@
+[
+    {
+      "fields": {
+        "name": { "stringValue": "Ravi Sharma" },
+        "batch": { "stringValue": "2020" },
+        "college": { "stringValue": "AIT Pune" },
+        "department": { "stringValue": "Computer Engineering" },
+        "profession": { "stringValue": "Software Engineer at Google" },
+        "location": { "stringValue": "Bangalore" },
+        "profileImageUrl": { "stringValue": "" }
+      }
+    },
+    {
+      "fields": {
+        "name": { "stringValue": "Sneha Joshi" },
+        "batch": { "stringValue": "2021" },
+        "college": { "stringValue": "AIT Pune" },
+        "department": { "stringValue": "Electronics" },
+        "profession": { "stringValue": "Hardware Engineer at Intel" },
+        "location": { "stringValue": "Pune" },
+        "profileImageUrl": { "stringValue": "" }
+      }
+    },
+    {
+      "fields": {
+        "name": { "stringValue": "Arjun Mehta" },
+        "batch": { "stringValue": "2019" },
+        "college": { "stringValue": "AIT Pune" },
+        "department": { "stringValue": "Mechanical" },
+        "profession": { "stringValue": "Project Manager at Tata Motors" },
+        "location": { "stringValue": "Mumbai" },
+        "profileImageUrl": { "stringValue": "" }
+      }
+    }
+  ]
+  

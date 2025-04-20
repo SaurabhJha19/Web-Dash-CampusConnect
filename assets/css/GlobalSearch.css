@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .directory-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    margin-top: 7%;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 30px;
+  }
+  
+  /* Search and Filters */
+  .search-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+  
+  .search-filters input,
+  .search-filters select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 200px;
+  }
+  
+  /* Alumni Grid */
+  .alumni-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Alumni Card */
+  .alumni-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+  }
+  
+  .alumni-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  .alumni-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .alumni-card h4 {
+    margin: 0;
+    color: #004080;
+  }
+  
+  .alumni-card p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  @media (max-width: 1100px) {
+    .directory-container {
+        margin-top: 10%;
+
+    }
+  }
+
+  @media (max-width: 800px) {
+    .directory-container {
+        margin-top: 20%;
+
+    }
+  }
+
+  @media (max-width: 500px) {
+    .directory-container {
+        margin-top: 30%;
+
+    }
+  }
